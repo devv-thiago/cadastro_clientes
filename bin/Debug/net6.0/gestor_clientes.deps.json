@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "gestor_clientes/1.0.0": {
+        "runtime": {
+          "gestor_clientes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "gestor_clientes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
