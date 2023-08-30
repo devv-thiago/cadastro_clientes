@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.Design;
-using System.Runtime.CompilerServices;
-
-internal class Program
+﻿internal class Program
 {
 
     struct Cliente {
@@ -32,7 +29,7 @@ internal class Program
             switch (opcao)
             {
                 case Menu.Listagem:
-                    Console.WriteLine();
+                    listarRegistros();
                     break;
                 case Menu.Adicionar:
                     adicionarRegistro();
@@ -49,6 +46,13 @@ internal class Program
         }
 
     }
+    static void listarRegistros()
+    {
+        for (string cliente in clientes)
+        {
+            Console.WriteLine(cliente);
+        }
+    }
     static void adicionarRegistro()
     {
         Console.WriteLine("--Cadastro de Clientes--");
@@ -60,5 +64,21 @@ internal class Program
         string telefoneCliente = Console.ReadLine();
         Cliente novoCliente = new Cliente(nomeCliente, emailCliente, telefoneCliente);
         clientes.Add(novoCliente);
+    }
+    static void removerRegistro()
+    {
+        Console.WriteLine("--Exclusão de Clientes--");
+        Console.Write("Digite o nome do cliente: ");
+        string nomeCliente = Console.ReadLine();
+        string clienteRemocao = clientes.Find(cliente => cliente.nome == nomeCliente);
+        if (clienteRemocao == nomeCliente)
+        {
+            clientes.Remove(clienteRemocao);
+            Console.WriteLine("Registro removido com sucesso");
+            Console.Clear();
+        } else
+        {
+            Console.WriteLine("Digite um nome válido!");
+        }
     }
 }
