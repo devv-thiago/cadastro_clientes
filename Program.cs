@@ -1,4 +1,7 @@
-﻿using System.Reflection.Metadata.Ecma335;
+﻿using System.IO;
+using System.Reflection.Metadata.Ecma335;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Text;
 
 internal class Program
 {
@@ -20,8 +23,8 @@ internal class Program
     enum Menu{Listagem = 1, Adicionar = 2, Remover = 3, Sair = 4 }
     private static void Main(string[] args)
     {
+        carregar();
         bool sairPrograma = false;
-
         while (!sairPrograma)
         {
             Console.WriteLine("Sistema de clientes - Bem vindo!");
@@ -72,6 +75,7 @@ internal class Program
         string telefoneCliente = Console.ReadLine();
         Cliente novoCliente = new Cliente(nomeCliente, emailCliente, telefoneCliente);
         clientes.Add(novoCliente);
+        salvar();
         Console.WriteLine("Novo cliente adicionado com sucesso!");
     }
     static void removerRegistro()
@@ -91,5 +95,32 @@ internal class Program
         {
             Console.WriteLine("Cliente não encontrado. Digite um nome válido!");
         }
+    }
+    static void salvar()
+    {
+        FileStream stream = new FileStream("Clientes.txt", FileMode.OpenOrCreate);
+        BinaryFormatter binary = new BinaryFormatter();
+        binary.Serialize(stream,clientes);
+        stream.Close();
+    }
+    static void carregar()
+    {
+        FileStream stream = new FileStream("Clientes.txt", FileMode.OpenOrCreate);
+        try {
+            
+            BinaryFormatter binary = new BinaryFormatter();
+            clientes = (List<Cliente>)binary.Deserialize(stream);
+            if(clientes == null)
+            {
+                clientes = new List<Cliente>();
+            }
+            stream.Close();
+        } catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+            
+        }
+        stream.Close();
+
     }
 }
