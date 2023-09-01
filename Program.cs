@@ -2,10 +2,13 @@
 using System.Reflection.Metadata.Ecma335;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
+using System.Xml;
 
 internal class Program
 {
 
+
+    [Serializable]
     struct Cliente {
         public string nome;
         public string email;
@@ -41,11 +44,13 @@ internal class Program
                     break;
                 case Menu.Adicionar:
                     adicionarRegistro();
-                    Thread.Sleep(1000);
-                    Console.Clear();
+                    salvar();
+                    //Thread.Sleep(1000);
+                    //Console.Clear();
                     break;
                 case Menu.Remover:
                     removerRegistro();
+                    salvar();
                     Thread.Sleep(1000);
                     Console.Clear();
                     break;
@@ -98,29 +103,34 @@ internal class Program
     }
     static void salvar()
     {
-        FileStream stream = new FileStream("Clientes.txt", FileMode.OpenOrCreate);
-        BinaryFormatter binary = new BinaryFormatter();
-        binary.Serialize(stream,clientes);
+        FileStream stream = new FileStream("Clientes.dat", FileMode.OpenOrCreate);
+        try {
+            BinaryFormatter encoder = new BinaryFormatter();
+            encoder.Serialize(stream, clientes);
+        } catch (Exception ex)
+        {
+            Console.WriteLine(ex.ToString());
+        }
+
         stream.Close();
     }
     static void carregar()
     {
-        FileStream stream = new FileStream("Clientes.txt", FileMode.OpenOrCreate);
+        FileStream stream = new FileStream("Clientes.dat", FileMode.OpenOrCreate);
         try {
             
-            BinaryFormatter binary = new BinaryFormatter();
-            clientes = (List<Cliente>)binary.Deserialize(stream);
+            BinaryFormatter encoder = new BinaryFormatter();
+            clientes = (List<Cliente>)encoder.Deserialize(stream);
             if(clientes == null)
             {
                 clientes = new List<Cliente>();
             }
-            stream.Close();
+            
         } catch (Exception ex)
         {
-            Console.WriteLine(ex.Message);
-            
+            clientes = new List<Cliente>();
+            Console.WriteLine(ex.Message);  
         }
         stream.Close();
-
     }
 }
