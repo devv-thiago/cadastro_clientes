@@ -1,0 +1,21 @@
+G:\csharp\gestor_clientes\bin\Debug\net6.0\gestor_clientes.exe
+G:\csharp\gestor_clientes\bin\Debug\net6.0\gestor_clientes.deps.json
+G:\csharp\gestor_clientes\bin\Debug\net6.0\gestor_clientes.runtimeconfig.json
+G:\csharp\gestor_clientes\bin\Debug\net6.0\gestor_clientes.dll
+G:\csharp\gestor_clientes\bin\Debug\net6.0\gestor_clientes.pdb
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.GeneratedMSBuildEditorConfig.editorconfig
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.AssemblyInfoInputs.cache
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.AssemblyInfo.cs
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.csproj.CoreCompileInputs.cache
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.dll
+G:\csharp\gestor_clientes\obj\Debug\net6.0\refint\gestor_clientes.dll
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.pdb
+G:\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.genruntimeconfig.cache
+G:\csharp\gestor_clientes\obj\Debug\net6.0\ref\gestor_clientes.dll
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.AssemblyInfoInputs.cache
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.AssemblyInfo.cs
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.csproj.CoreCompileInputs.cache
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.dll
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\refint\gestor_clientes.dll
+C:\Users\thiago.fofano\OneDrive - Emulzint Aditivos Alimentícios Ind e Com Ltda\Documentos\csharp\gestor_clientes\obj\Debug\net6.0\gestor_clientes.pdb
