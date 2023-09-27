@@ -1,13 +1,12 @@
-# cadastro_clientes (Sem interface visual)
+# Cadastro clientes (Sem interface visual)
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=c-sharp&logoColor=white)
 
-Este projeto em C# visa criar um sistema de gerenciamento de estoque básico, projetado para ajudar no controle e registro de informações sobre produtos e movimentações de estoque. O projeto é uma implementação simples, mas aberta à expansão e aprimoramento, adaptando-se às necessidades específicas do usuário.
+Este projeto de Cadastro de Clientes é uma aplicação que permite aos usuários registrar informações de clientes, remover registros, listar todos os clientes cadastrados e salvar os dados dos clientes em arquivos de texto binários. Ele oferece uma solução eficaz para gerenciamento de informações de clientes e armazenamento seguro dos dados.
 
 ## Funcionalidades Principais
-- **Gerenciamento de produtos:** Os usuários podem registrar, excluir e atualizar produtos do estoque.
-- **Registro de movimentação de estoque:** Ao realizar alguma alteração no estoque, as movimentações são registradas, e podem ser visualizadas posteriormente.
-- **Gerenciamento de estoque:** Os usuários podem registrar entrada e saída.
-- **Relatórios:** Os usuários podem gerar relatórios dos produtos em estoque, e das movimentações que foram feitas.
+- **Registro de Clientes:** Os usuários podem registrar informações de clientes, como nome, sobrenome, etc.
+- **Remoção de Clientes:** Os registros de clientes podem ser removidos individualmente com base em seus IDs.
+- **Listagem de Clientes:** A aplicação oferece uma opção para listar todos os clientes cadastrados.
 
 ## Instalação 
 ### Para desenvolvedores
